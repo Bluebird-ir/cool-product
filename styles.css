@@ -36,6 +36,11 @@ button {
   --color-accent: #4361ee; /* primary accent color — indigo/blue */
   --color-accent-hover: #3a56d4; /* accent on hover */
 
+  --color-btn-secondary-bg: #ffffff;
+  --color-btn-secondary-hover: #d1d5db;
+  --color-btn-secondary-text: #1a1a2e;
+  --color-btn-secondary-border: #d1d5db;
+
   --color-surface: #ffffff; /* cards, panels */
   --color-border: #d1d5db; /* borders */
 
@@ -59,6 +64,7 @@ button {
   --font-weight-bold: 700;
 
   /* --- Spacing --- */
+  --space-section-padding: 2.625rem; /* vertical spacing between sections */
   --space-xs: 0.5rem; /*  8px */
   --space-sm: 1rem; /* 16px */
   /* --space-md: ;
@@ -102,8 +108,95 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--color-accent-hover);
+  }
+
+  &.btn-secondary {
+    background-color: var(--color-btn-secondary-bg);
+    color: var(--color-btn-secondary-text);
+    border: 1px solid var(--color-btn-secondary-border);
+    &:hover {
+      background-color: var(--color-btn-secondary-hover);
+    }
+  }
 }
 
 /* Header */
 .header {
+  background: var(--color-bg-dark);
+  padding: var(--space-sm);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.btn-humburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  &:hover {
+    background: var(--color-accent-hover);
+    opacity: 0.7;
+    /* .humburger-line {
+      background-color: var(--color-accent-hover);
+    } */
+  }
+}
+
+.humburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-text-light);
+  transition: all 0.3s ease-in-out;
+}
+/* end Header */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: var(--space-sm);
+    background-color: var(--color-bg-dark);
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    padding: var(--space-sm);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-humburger {
+    display: flex;
+    &:focus + .nav {
+      right: 0;
+    }
+  }
 }
