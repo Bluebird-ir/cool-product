@@ -42,6 +42,10 @@ button {
     /* primary accent color — indigo/blue */
     --color-accent-hover: #3a56d4;
     /* accent on hover */
+    --color-btn-secondary-bg: #ffffff;
+    --color-btn-secondary-hover: #d1d5db;
+    --color-btn-secondary-text: #1a1a2e;
+    --color-btn-secondary-border: #d1d5db;
 
     --color-surface: #ffffff;
     /* cards, panels */
@@ -74,6 +78,8 @@ button {
     --font-weight-bold: 700;
 
     /* --- Spacing --- */
+    --space-section-padding: 2.625rem;
+    /* vertical spacing between sections */
     --space-xs: 0.5rem;
     /*  8px */
     --space-sm: 1rem;
@@ -105,6 +111,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* LAYOUT HELPERS */
 .container {
     max-width: var(--container-max-width);
@@ -117,31 +124,94 @@ body {
 
 .txt {}
 
-.btn {}
+
+.btn {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    &.btn-secondary {
+        background-color: var(--color-btn-secondary-bg);
+        color: var(--color-btn-secondary-text);
+        border: 1px solid var(--color-btn-secondary-border);
+
+        &:hover {
+            background-color: var(--color-btn-secondary-hover);
+        }
+    }
+}
 
 /* Header */
-.header {}
-
-/* main */
-main {
-    background-color: var(--color-bg-alt);
-    max-width: var(--container-max-width);
-    margin: 0 auto;
+.header {
+    background: var(--color-bg-dark);
+    padding: var(--space-sm);
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-text-light);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.btn-humburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+
+    &:hover {
+        background: var(--color-accent-hover);
+        opacity: 0.7;
+    }
+}
+
+.humburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text-light);
+    transition: all 0.3s ease-in-out;
+}
+
+/* end Header */
 
 /* Home section */
 .home {
+    background-color: var(--color-bg--semi-dark);
+}
+
+.card-wrapper {
     display: flex;
     gap: 5rem;
-    background-color: var(--color-bg--semi-dark);
-    min-width: 582px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
 }
 
 .home-left-card {
     background-color: var(--color-bg-alt);
-    margin-left: 10rem;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -179,9 +249,6 @@ main {
 
 .home-right-card {
     background-color: var(--color-bg-alt);
-    margin-right: 13rem;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
     padding: var(--space-sm) 1.5rem;
     border: 1px solid var(--color-border);
     border-radius: 25px;
@@ -213,4 +280,28 @@ main {
 
 .home-right-card .home-button {
     margin-top: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: var(--space-sm);
+        background-color: var(--color-bg-dark);
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        padding: var(--space-sm);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-humburger {
+        display: flex;
+
+        &:focus+.nav {
+            right: 0;
+        }
+    }
 }
