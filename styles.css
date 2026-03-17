@@ -12,6 +12,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+
   &:hover {
     color: var(--color-accent);
     text-decoration: underline;
@@ -67,10 +68,14 @@ button {
   --font-family: "Roboto", sans-serif;
 
   /* --font-size-xs: ; */
-  --font-size-sm: 0.875rem; /* 14px */
-  --font-size-base: 1rem; /* 16px — default body size */
-  --font-size-lg: 1.25rem; /* 20px */
-  --font-size-3xl: 2rem; /* 32px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px — default body size */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-3xl: 2rem;
+  /* 32px */
   /* --font-size-xl: ;
   --font-size-2xl: ;
   --font-size-3xl: ; */
@@ -80,17 +85,23 @@ button {
   --font-weight-bold: 700;
 
   /* --- Spacing --- */
-  --space-section-padding: 2.625rem; /* vertical spacing between sections */
-  --space-xs: 0.5rem; /*  8px */
-  --space-sm: 1rem; /* 16px */
-  --space-xl: 3rem; /* 48px */
-  --space-3xl: 5rem; /* 80px */
+  --space-section-padding: 2.625rem;
+  /* vertical spacing between sections */
+  --space-xs: 0.5rem;
+  /*  8px */
+  --space-sm: 1rem;
+  /* 16px */
+  --space-xl: 3rem;
+  /* 48px */
+  --space-3xl: 5rem;
+  /* 80px */
   /* --space-md: ;
   .... */
 
   /* --- Border radius --- */
   --radius-sm: 5px;
-  --radius-full: 50%; /* for circular elements */
+  --radius-full: 50%;
+  /* for circular elements */
   /* --radius-sm: 5px;
   ..... */
 
@@ -191,6 +202,7 @@ body {
   transition: all 0.3s ease-in-out;
   padding: 0.5rem;
   border-radius: var(--radius-sm);
+
   &:hover {
     background: var(--color-accent-hover);
     opacity: 0.7;
@@ -320,12 +332,41 @@ body {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   transition: all 0.3s ease-in-out;
+
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
   }
 }
+
 /* end trusted-by */
+
+/* start video section */
+.video-section {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: var(--space-section-padding) 0;
+}
+
+.video-title {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.video-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.video-embed iframe {
+  width: min(800px, 100%);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 1rem;
+}
+
+/* end video section */
 
 /* features */
 .features {
@@ -356,6 +397,7 @@ body {
   max-width: 300px;
   transition: all 0.3s ease-in-out;
   text-align: center;
+
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
@@ -404,6 +446,7 @@ body {
   height: 70px;
   border-radius: var(--radius-full);
   transition: all 0.3s ease-in-out;
+
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
@@ -430,7 +473,7 @@ body {
   .btn-humburger {
     display: flex;
 
-    &:focus + .nav {
+    &:focus+.nav {
       right: 0;
     }
   }
