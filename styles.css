@@ -214,7 +214,3 @@ main {
 .home-right-card .home-button {
     margin-top: 0.5rem;
 }
-
-.home-button-outline:hover {
-    background-color: var(--color-bg);
-}
