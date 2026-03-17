@@ -29,24 +29,35 @@ button {
 /* variables */
 :root {
   /* --- Colors --- */
-  --color-bg: #f4f5f7; /* main page background (light) */
-  --color-bg-alt: #e8eaed; /* slightly darker — for alternating sections */
-  --color-bg-dark: #2b2d42; /* dark sections (header, video, etc.) */
+  --color-bg: #f4f5f7;
+  /* main page background (light) */
+  --color-bg-alt: #e8eaed;
+  /* slightly darker — for alternating sections */
+  --color-bg-dark: #2b2d42;
+  /* dark sections (header, video, etc.) */
+  --color-bg--semi-dark: #99a7b9;
+  /* mid-dark sections */
 
-  --color-accent: #4361ee; /* primary accent color — indigo/blue */
-  --color-accent-hover: #3a56d4; /* accent on hover */
-
+  --color-accent: #4361ee;
+  /* primary accent color — indigo/blue */
+  --color-accent-hover: #3a56d4;
+  /* accent on hover */
   --color-btn-secondary-bg: #ffffff;
   --color-btn-secondary-hover: #d1d5db;
   --color-btn-secondary-text: #1a1a2e;
   --color-btn-secondary-border: #d1d5db;
 
-  --color-surface: #ffffff; /* cards, panels */
-  --color-border: #d1d5db; /* borders */
+  --color-surface: #ffffff;
+  /* cards, panels */
+  --color-border: #d1d5db;
+  /* borders */
 
-  --color-text: #1a1a2e; /* primary text */
-  --color-text-muted: #6b7280; /* secondary / subtle text */
-  --color-text-light: #ffffff; /* text on dark backgrounds */
+  --color-text: #1a1a2e;
+  /* primary text */
+  --color-text-muted: #6b7280;
+  /* secondary / subtle text */
+  --color-text-light: #ffffff;
+  /* text on dark backgrounds */
 
   /* --- Typography --- */
   --font-family: "Roboto", sans-serif;
@@ -84,7 +95,8 @@ button {
   ..... */
 
   /* --- Layout --- */
-  --container-max-width: 1100px; /* max width of the centered content wrapper */
+  --container-max-width: 1100px;
+  /* max width of the centered content wrapper */
 }
 
 /* BASE - Global element defaults */
@@ -122,6 +134,7 @@ body {
   color: var(--color-text-light);
   border-radius: var(--radius-sm);
   transition: all 0.3s ease-in-out;
+
   &:hover {
     background-color: var(--color-accent-hover);
   }
@@ -130,6 +143,7 @@ body {
     background-color: var(--color-btn-secondary-bg);
     color: var(--color-btn-secondary-text);
     border: 1px solid var(--color-btn-secondary-border);
+
     &:hover {
       background-color: var(--color-btn-secondary-hover);
     }
@@ -181,7 +195,93 @@ body {
   background-color: var(--color-text-light);
   transition: all 0.3s ease-in-out;
 }
+
 /* end Header */
+
+/* Home section */
+.home {
+  background-color: var(--color-bg--semi-dark);
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+.home-left-card {
+  background-color: var(--color-bg-alt);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  width: 23rem;
+}
+
+.home-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 1.75rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+}
+
+.home-heading {
+  font-size: 2rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  margin-top: 3rem;
+  line-height: 1.2;
+}
+
+.home-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.home-right-card .home-text {
+  line-height: 0rem;
+}
+
+.home-right-card {
+  background-color: var(--color-bg-alt);
+  padding: var(--space-sm) 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-subheading {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  margin-top: 15rem;
+}
+
+.home-button {
+  background-color: var(--color-surface);
+  padding: 0.25rem 1.5rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+}
+
+.home-left-card .home-button {
+  align-self: flex-start;
+  margin-top: 5rem;
+}
+
+.home-right-card .home-button {
+  margin-top: 0.5rem;
+}
 
 /* trusted-by */
 .trusted {
@@ -284,6 +384,7 @@ body {
 
   .btn-humburger {
     display: flex;
+
     &:focus + .nav {
       right: 0;
     }
