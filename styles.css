@@ -459,6 +459,69 @@ body {
 }
 /* end advantages */
 
+/* prices */
+.prices-section {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: var(--space-section-padding) 0;
+  text-align: center;
+}
+
+.prices-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: var(--space-xs);
+}
+
+.prices-description {
+  margin: 0 auto var(--space-xl);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.price-packages-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.price-package {
+  width: min(300px, 100%);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.price-package:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.price-img {
+  width: min(220px, 85%);
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.price-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--space-xs);
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+/* end prices */
+
 /* Footer */
 .footer {
   background-color: var(--color-bg);
