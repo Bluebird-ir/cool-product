@@ -63,12 +63,10 @@ button {
   --font-family: "Roboto", sans-serif;
 
   /* --font-size-xs: ; */
-  --font-size-sm: 0.875rem;
-  /* 14px */
-  --font-size-base: 1rem;
-  /* 16px — default body size */
-  --font-size-lg: 1.25rem;
-  /* 20px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px — default body size */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-3xl: 2rem; /* 32px */
   /* --font-size-xl: ;
   --font-size-2xl: ;
   --font-size-3xl: ; */
@@ -82,11 +80,13 @@ button {
   --space-xs: 0.5rem; /*  8px */
   --space-sm: 1rem; /* 16px */
   --space-xl: 3rem; /* 48px */
+  --space-3xl: 5rem; /* 80px */
   /* --space-md: ;
   .... */
 
   /* --- Border radius --- */
   --radius-sm: 5px;
+  --radius-full: 50%; /* for circular elements */
   /* --radius-sm: 5px;
   ..... */
 
@@ -118,6 +118,10 @@ body {
 
 /* TYPOGRAPHY HELPERS */
 .section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: normal;
+  margin-bottom: var(--space-sm);
+  text-align: center;
 }
 
 .txt {
@@ -314,6 +318,54 @@ body {
   }
 }
 /* end trusted-by */
+
+/* features */
+.features {
+  background-color: var(--color-bg-alt);
+  padding: var(--space-section-padding) 0;
+}
+
+.title-description {
+  margin-bottom: var(--space-3xl);
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.features-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+.features-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-sm);
+  border-radius: var(--radius-full);
+}
+
+/* end features */
 
 /* Media Queries */
 @media (max-width: 768px) {
