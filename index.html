@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Cool Product!</title>
+    <!-- Fonts -->
+    <!-- preconnect - tells the browser to establish a connection to the specified origin before making requests -->
+    <!-- https://fonts.googleapis.com - gives us css for google fonts -->
+    <!-- https://fonts.gstatic.com - provides the font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end Fonts -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">Your cool product</div>
+        <div class="header-actions">
+          <button class="btn-humburger">
+            <span class="humburger-line"></span>
+            <span class="humburger-line"></span>
+            <span class="humburger-line"></span>
+          </button>
+          <nav class="nav">
+            <a href="#home" class="btn nav-link">Home</a>
+            <a href="#features" class="btn nav-link">Features</a>
+            <a href="#pricing" class="btn nav-link">Prices</a>
+            <a href="#" class="btn btn-secondary">Try for free</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end Header -->
+    <main>
+      <!-- start Home -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="card-wrapper">
+            <div class="home-left-card">
+              <span class="home-badge">#1 Editors Choice App of 2020</span>
+              <h1 class="home-heading">Some catchy line</h1>
+              <p class="home-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet mass.
+              </p>
+              <button class="home-button">Try for free</button>
+            </div>
+
+            <div class="home-right-card">
+              <h3 class="home-subheading">Definitely a demo</h3>
+              <p class="home-text">WBS Coding School</p>
+              <p class="home-text">Lorem ipsum dolor sit.</p>
+              <button class="home-button">Continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Home -->
+
+      <!-- Trusted by -->
+      <section class="trusted">
+        <div class="container">
+          <h2 class="section-title">Trusted by companies like</h2>
+
+          <div class="trusted-logos">
+            <!-- Заменить на реальные <img> с логотипами -->
+            <div class="trusted-logos-item">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 28.4356C16.5306 28.4357 13.3035 30.2166 11.4521 33.1512L9.1543 36.7934L10.0371 37.3511C10.3132 37.5101 10.5937 37.6622 10.8779 37.8082L13.1436 34.2188C14.6285 31.8648 17.2171 30.437 20 30.4369C22.783 30.4369 25.3714 31.8647 26.8564 34.2188L29.1211 37.8082C29.4053 37.6623 29.6858 37.5101 29.9619 37.3511L30.8457 36.7934L28.5479 33.1512C26.6964 30.2165 23.4695 28.4356 20 28.4356ZM20.123 36.4428L20 36.4379C19.3855 36.4381 18.8239 36.774 18.5312 37.3072L18.4766 37.4166L17.3691 39.834C18.0662 39.9256 18.7744 39.9821 19.4922 40L20 38.8914L20.5068 40C21.2249 39.9821 21.9335 39.9256 22.6309 39.834L21.5244 37.4166L21.4697 37.3072C21.1966 36.8096 20.689 36.4842 20.123 36.4428ZM21 12.4063V0H19V12.4063L15.7891 0.422921L13.8574 0.940585L17.0674 12.923L10.8662 2.18005L9.13379 3.18021L15.335 13.9222L6.56543 5.15124L5.15039 6.56651L13.9199 15.3375L3.17969 9.13529L2.17969 10.868L12.9209 17.0702L0.94043 13.8597L0.422852 15.7917L12.4053 19.0031H0V21.0035H12.4053L0.422852 24.2149L0.94043 26.1469L12.9209 22.9354L2.17969 29.1386L3.17969 30.8713L13.9199 24.6681L5.15039 33.4401L6.56543 34.8554L13.1216 28.2964C13.684 27.7337 14 26.9706 14 26.175V20.435C14 17.1209 16.6865 14.4342 20 14.434C23.3137 14.434 26 17.1208 26 20.435V26.1759C26 26.9716 26.316 27.7347 26.8785 28.2974L33.4346 34.8554L34.8496 33.4401L26.0801 24.6691L36.8203 30.8713L37.8203 29.1386L27.0791 22.9354L39.0596 26.1469L39.5771 24.2149L27.5957 21.0035H40V19.0031H27.5947L39.5771 15.7917L39.0596 13.8597L27.0791 17.0692L37.8203 10.868L36.8203 9.13529L26.0781 15.3375L34.8496 6.56554L33.4355 5.15124L24.6641 13.9232L30.8662 3.18021L29.1338 2.18005L22.9316 12.923L26.1426 0.940585L24.2109 0.422921L21 12.4063ZM20 32.4372C18.0122 32.4374 16.1792 33.5112 15.207 35.2453L13.2021 38.8201C13.8407 39.051 14.4942 39.2501 15.1611 39.4159L16.9512 36.224C17.5694 35.1209 18.7357 34.4377 20 34.4376C21.2645 34.4376 22.4305 35.1208 23.0488 36.224L24.8379 39.4159C25.5048 39.2502 26.1583 39.0509 26.7969 38.8201L24.793 35.2453C23.8208 33.5111 21.9879 32.4372 20 32.4372Z"
+                  fill="#FF2121"
+                ></path>
+              </svg>
+            </div>
+            <div class="trusted-logos-item">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 0C25.3043 4.00466e-07 30.3919 2.10669 34.1426 5.85742C34.8157 6.53058 35.4354 7.24719 36 8H20C16.8174 8 13.7651 9.26421 11.5146 11.5146C9.26421 13.7651 8 16.8174 8 20H20L36.9102 9.31934C38.1656 11.3074 39.0611 13.5027 39.5547 15.8027L32 20H40L39.9941 20.4971C39.8669 25.6213 37.776 30.5092 34.1426 34.1426C30.3919 37.8933 25.3043 40 20 40C14.6957 40 9.60815 37.8933 5.85742 34.1426C5.18426 33.4694 4.56459 32.7528 4 32H20C23.1826 32 26.2349 30.7358 28.4854 28.4854C30.5952 26.3755 31.8383 23.5608 31.9854 20.5947L32 20H20L3.08984 30.6787C1.83452 28.6906 0.941002 26.4951 0.447266 24.1953L8 20H0C8.00931e-07 14.6957 2.1067 9.60815 5.85742 5.85742C9.60815 2.1067 14.6957 -5.79361e-10 20 0Z"
+                  fill="#0094F7"
+                ></path>
+              </svg>
+            </div>
+            <div class="trusted-logos-item">
+              <svg
+                width="62"
+                height="40"
+                viewBox="0 0 62 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.02047 20.514L38.3369 12.1305H10.0945L7.02047 20.514ZM6.59954 21.662L5.2839 25.25H5.28572L2.09656 34.1495L38.5941 13.0969L6.59954 21.662ZM1.57495 35.605L0 40H13.0334L39.094 13.9633L1.57495 35.605ZM14.4489 40H25.1661L39.8062 14.666L14.4489 40ZM26.3219 40H34.0116L40.6711 15.1693L26.3219 40ZM35.0478 40H41.6376V15.4292L35.0478 40ZM42.6385 40H49.2288L42.6385 15.4273V40ZM50.1713 39.6503L52.3203 33.6534C52.6446 32.7483 52.7601 31.7948 52.673 30.8601L43.6055 15.1691L50.1713 39.6503ZM50.386 24.9025C51.4645 24.6247 52.4867 24.1867 53.421 23.6103L44.4732 14.6707L50.386 24.9025ZM54.262 23.0363C55.1738 22.3502 55.9801 21.5219 56.6455 20.5763L45.1804 13.9629L54.262 23.0363ZM57.1836 19.732C57.492 19.1957 57.7578 18.6284 57.9758 18.0338L58.5256 16.5346L45.6778 13.0952L57.1836 19.732ZM58.8713 15.5918L60.1404 12.1305H45.9415L58.8713 15.5918ZM60.5071 11.1305L61.6315 8.06389C61.78 7.65908 61.8821 7.25179 61.9412 6.84684L45.9397 11.1305H60.5071ZM62 5.79582C61.9487 4.25961 61.2986 2.82175 60.2459 1.76246L45.6788 10.1651L62 5.79582ZM59.4324 1.07701C58.4714 0.403271 57.2938 0 55.9925 0H54.4856L45.1777 9.29939L59.4324 1.07701ZM53.0701 0H49.4371L44.4744 8.58786L53.0701 0ZM48.2814 0H45.7756L43.6056 8.09119L48.2814 0ZM44.7394 0H42.6385V7.83342L44.7394 0ZM41.6376 0H39.5372L41.6376 7.83154V0ZM38.501 0H35.9953L40.6709 8.09095L38.501 0ZM34.8396 0H31.2046L39.8051 8.59257L34.8396 0ZM29.7891 0H22.9754L39.0967 9.29905L29.7891 0ZM10.4612 11.1305H38.3387L12.953 4.33465L10.4612 11.1305ZM13.3033 3.39316L38.5932 10.1633L20.9736 0H18.3885C16.1557 0 14.1524 1.3462 13.3033 3.39316Z"
+                  fill="#FF651D"
+                ></path>
+              </svg>
+            </div>
+            <div class="trusted-logos-item">
+              <svg
+                width="62"
+                height="40"
+                viewBox="0 0 62 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 10H42C47.5228 10 52 14.4772 52 20C52 25.5228 47.5228 30 42 30H36V28H42C46.4183 28 50 24.4183 50 20C50 15.5817 46.4183 12 42 12H32V22H42C43.1046 22 44 21.1046 44 20C44 18.8954 43.1046 18 42 18H36V16H42C44.2091 16 46 17.7909 46 20C46 22.2091 44.2091 24 42 24H32V34H42C49.732 34 56 27.732 56 20C56 12.268 49.732 6 42 6H36V4H42C50.8366 4 58 11.1634 58 20C58 28.8366 50.8366 36 42 36H32V40H42C53.0457 40 62 31.0457 62 20C62 8.95431 53.0457 0 42 0H32V10Z"
+                  fill="#4D0DA2"
+                ></path>
+                <path
+                  d="M20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40H30V30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10H26V12H20C15.5817 12 12 15.5817 12 20C12 24.4183 15.5817 28 20 28H30V18H20C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22H26V24H20C17.7909 24 16 22.2091 16 20C16 17.7909 17.7909 16 20 16H30V6H20C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34H26V36H20C11.1634 36 4 28.8366 4 20C4 11.1634 11.1634 4 20 4H30V0H20Z"
+                  fill="#4D0DA2"
+                ></path>
+              </svg>
+            </div>
+            <div class="trusted-logos-item">
+              <svg
+                width="49"
+                height="40"
+                viewBox="0 0 49 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17 0C17.5523 0 18 0.447715 18 1V8.39648C18 8.61918 18.2693 8.7307 18.4268 8.57324L26.4141 0.585938C26.7891 0.210936 27.2978 7.97938e-05 27.8281 0H36.5859C36.8511 4.04019e-05 37.1055 0.105468 37.293 0.292969L40.293 3.29297C40.6834 3.68347 40.6834 4.31653 40.293 4.70703L36.4268 8.57324C36.2693 8.73073 36.3808 8.99997 36.6035 9H44.5859C44.8511 9.00004 45.1055 9.10547 45.293 9.29297L48.293 12.293C48.6834 12.6835 48.6834 13.3165 48.293 13.707L44.3535 17.6465C44.1583 17.8417 44.1583 18.1583 44.3535 18.3535L47.5859 21.5859C48.4914 22.4914 49 23.7195 49 25C49 26.2805 48.4913 27.5086 47.5859 28.4141L36.5859 39.4141C36.2109 39.7891 35.7022 39.9999 35.1719 40H32C31.4477 40 31 39.5523 31 39V31.6035C31 31.3808 30.7307 31.2693 30.5732 31.4268L22.5859 39.4141C22.2109 39.7891 21.7022 39.9999 21.1719 40H12.4141C12.1489 40 11.8945 39.8945 11.707 39.707L8.70703 36.707C8.31661 36.3165 8.31661 35.6835 8.70703 35.293L12.5732 31.4268C12.7307 31.2693 12.6192 31 12.3965 31H4.41406C4.1489 31 3.89453 30.8945 3.70703 30.707L0.707031 27.707C0.316606 27.3165 0.316607 26.6835 0.707031 26.293L4.64648 22.3535C4.8417 22.1583 4.8417 21.8417 4.64648 21.6465L1.41406 18.4141C0.508652 17.5086 0 16.2805 0 15C0 13.7195 0.508651 12.4914 1.41406 11.5859L12.4141 0.585938C12.7891 0.210936 13.2978 8.00463e-05 13.8281 0H17ZM20.0713 9C18.7452 9 17.4728 9.52716 16.5352 10.4648L5.85352 21.1465C5.53861 21.4615 5.76165 21.9999 6.20703 22H20.793C21.2383 22.0001 21.4613 22.5386 21.1465 22.8535L13.8535 30.1465C13.5386 30.4615 13.7616 30.9999 14.207 31H28.9287C30.2548 31 31.5272 30.4728 32.4648 29.5352L43.1465 18.8535C43.4417 18.5583 43.2642 18.0663 42.874 18.0059L42.793 18H28.207C27.7616 18 27.5386 17.4615 27.8535 17.1465L35.1465 9.85352C35.4614 9.53855 35.2384 9.00006 34.793 9H20.0713Z"
+                  fill="#297AFF"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Trusted by -->
+
+      <!--  start Video-section -->
+      <section class="video-section">
+        <div class="container">
+          <h2 class="section-title">Check out our video:</h2>
+          <div class="video-embed" aria-label="Product video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/h359LRmMZMU"
+              title="Product video"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- end Video-section -->
+
+      <!-- Features -->
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="section-title">Awesome apps features</h2>
+          <p class="title-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet mass.
+          </p>
+          <ul class="features-list">
+            <li class="features-item">
+              <figure class="features-item-img">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30 28V12C30 10.8954 29.1046 10 28 10H27.8994C27.369 10 26.8604 10.2109 26.4854 10.5859L10.5859 26.4854C10.2109 26.8604 10 27.369 10 27.8994V40H0V27.8994C2.15312e-05 24.7168 1.26423 21.6645 3.51465 19.4141L19.4141 3.51465C21.6645 1.26423 24.7168 2.1373e-05 27.8994 0H28C34.6274 0 40 5.37258 40 12V28C40 34.6274 34.6274 40 28 40H14V30H28C29.1046 30 30 29.1046 30 28Z M0 0H17L7 10H0V0Z"
+                    fill="#FF4D00"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="features-item">
+              <figure class="features-item-img">
+                <svg
+                  width="56"
+                  height="40"
+                  viewBox="0 0 56 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.3333 0C23.7194 0 24.1033 0.00932962 24.4847 0.0280265C24.4924 0.0284028 24.4989 0.0222809 24.4989 0.0145938V0.0145938C24.4989 0.00716838 24.5049 0.0011489 24.5123 0.0011489H45.8418C46.2974 0.00137965 46.6667 0.373466 46.6667 0.83295C46.6666 1.05356 46.5798 1.26515 46.4251 1.42119L40.8322 7.05882H52.7444C53.5415 7.05882 54.27 7.52957 54.5456 8.27757C55.4857 10.829 56 13.5892 56 16.4706C56 29.4655 45.5533 40 32.6667 40C32.2808 40 31.8971 39.9896 31.5158 39.9709C31.5078 39.9705 31.5011 39.9768 31.5011 39.9848V39.9848C31.5011 39.9926 31.4949 39.9989 31.4871 39.9989H10.1582C9.7026 39.9986 9.33333 39.6265 9.33333 39.1671C9.33336 38.9464 9.42022 38.7348 9.57487 38.5788L15.1655 32.9412H3.25562C2.45846 32.9412 1.73002 32.4704 1.4544 31.7224C0.514256 29.171 0 26.4109 0 23.5294C0 10.5345 10.4467 0 23.3333 0ZM31.3177 16.6556C29.3919 14.383 26.5301 12.9412 23.3333 12.9412C17.5343 12.9412 12.8333 17.6817 12.8333 23.5294C12.8333 24.7672 13.0456 25.9547 13.4326 27.0588H20.9989L24.6823 23.3444C26.6081 25.617 29.4699 27.0588 32.6667 27.0588C38.4657 27.0588 43.1667 22.3183 43.1667 16.4706C43.1667 15.2328 42.9544 14.0453 42.5674 12.9412H35.0011L31.3177 16.6556Z"
+                    fill="#3754FA"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="features-item">
+              <figure class="features-item-img">
+                <svg
+                  width="58"
+                  height="40"
+                  viewBox="0 0 58 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.6625 0C29.5499 0.000157557 33.512 3.87456 33.5121 8.65224C33.5121 8.91866 33.4997 9.18398 33.4824 9.44828H40.9366C48.1871 9.44828 51.0342 18.6407 45.0014 22.5723L37.1131 27.7122C35.415 28.8193 35.8805 31.3743 37.8654 31.84C38.5143 31.9921 39.1997 31.8658 39.7475 31.4934L44.3242 28.1927C44.4979 28.0675 44.7074 28 44.9225 28H57.4922C57.9872 28 58.1886 28.6281 57.7838 28.909L44.4783 38.1397C41.99 39.8319 38.8796 40.4048 35.9321 39.7133C26.9186 37.5986 24.8061 26.0015 32.5185 20.9749L37.7818 17.5457H29.7048H24.5358C23.0515 17.5457 21.6504 17.1926 20.4171 16.5691C21.7314 17.4535 24.9805 18.4377 27.7216 18.6251C27.9658 18.6251 28.3625 18.8385 27.8901 19.3183L11.2952 35.7067C11.105 35.8945 10.847 36 10.578 36H0.507884C0.056246 36 -0.169872 35.4613 0.149574 35.1463L19.5219 16.0472C17.1349 14.4709 15.5652 11.8013 15.5649 8.77349C15.5649 3.92875 19.5825 0 24.5385 0H24.6625ZM24.8419 6.74915C23.6982 6.74915 22.771 7.35337 22.771 8.09871C22.7715 8.71319 23.4024 9.23009 24.2648 9.39292C24.3487 9.42847 24.4413 9.44828 24.5385 9.44828H25.1533C25.1544 9.44225 25.1535 9.43586 25.1546 9.42983C26.1495 9.33152 26.9122 8.77441 26.9127 8.09871C26.9127 7.35337 25.9855 6.74915 24.8419 6.74915Z"
+                    fill="#002A3D"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Features -->
+
+      <!-- Advantages -->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="section-title">Why you should choose our app</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="46"
+                  height="40"
+                  viewBox="0 0 46 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 33L4.60606 25H12.2448C17.2569 25 21.4947 28.7103 22.1571 33.6784L23 40H13L11.5585 36.6365C10.613 34.4304 8.44379 33 6.04362 33H0Z"
+                    fill="#0047C1"
+                  ></path>
+                  <path
+                    d="M46 33L41.3939 25H33.7552C28.7431 25 24.5053 28.7103 23.8429 33.6784L23 40H33L34.4415 36.6365C35.387 34.4304 37.5562 33 39.9564 33H46Z"
+                    fill="#0047C1"
+                  ></path>
+                  <path
+                    d="M4.60606 25L18.9999 0H23L22.6032 9.52405C22.2608 17.7406 15.7455 24.3596 7.53537 24.8316L4.60606 25Z"
+                    fill="#0047C1"
+                  ></path>
+                  <path
+                    d="M41.3939 25L27.0001 0H23L23.3968 9.52405C23.7392 17.7406 30.2545 24.3596 38.4646 24.8316L41.3939 25Z"
+                    fill="#0047C1"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="56"
+                  height="40"
+                  viewBox="0 0 56 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.3333 0C23.7194 0 24.1033 0.00932962 24.4847 0.0280265C24.4924 0.0284028 24.4989 0.0222809 24.4989 0.0145938V0.0145938C24.4989 0.00716838 24.5049 0.0011489 24.5123 0.0011489H45.8418C46.2974 0.00137965 46.6667 0.373466 46.6667 0.83295C46.6666 1.05356 46.5798 1.26515 46.4251 1.42119L40.8322 7.05882H52.7444C53.5415 7.05882 54.27 7.52957 54.5456 8.27757C55.4857 10.829 56 13.5892 56 16.4706C56 29.4655 45.5533 40 32.6667 40C32.2808 40 31.8971 39.9896 31.5158 39.9709C31.5078 39.9705 31.5011 39.9768 31.5011 39.9848V39.9848C31.5011 39.9926 31.4949 39.9989 31.4871 39.9989H10.1582C9.7026 39.9986 9.33333 39.6265 9.33333 39.1671C9.33336 38.9464 9.42022 38.7348 9.57487 38.5788L15.1655 32.9412H3.25562C2.45846 32.9412 1.73002 32.4704 1.4544 31.7224C0.514256 29.171 0 26.4109 0 23.5294C0 10.5345 10.4467 0 23.3333 0ZM31.3177 16.6556C29.3919 14.383 26.5301 12.9412 23.3333 12.9412C17.5343 12.9412 12.8333 17.6817 12.8333 23.5294C12.8333 24.7672 13.0456 25.9547 13.4326 27.0588H20.9989L24.6823 23.3444C26.6081 25.617 29.4699 27.0588 32.6667 27.0588C38.4657 27.0588 43.1667 22.3183 43.1667 16.4706C43.1667 15.2328 42.9544 14.0453 42.5674 12.9412H35.0011L31.3177 16.6556Z"
+                    fill="#3754FA"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.724 36.5809C37.7426 32.5622 40.0003 27.1118 40.0003 21.4286C40.0003 15.7454 37.7426 10.2949 33.724 6.27629C29.7054 2.25765 24.2549 1.02188e-06 18.5717 0C12.8885 -1.02188e-06 7.43807 2.25764 3.41943 6.27628L10.4905 13.3473C11.6063 14.4631 13.4081 14.4074 14.8276 13.7181C15.9836 13.1568 17.2622 12.8571 18.5717 12.8571C20.845 12.8571 23.0252 13.7602 24.6326 15.3677C26.2401 16.9751 27.1431 19.1553 27.1431 21.4286C27.1431 22.7381 26.8435 24.0167 26.2822 25.1727C25.5929 26.5922 25.5372 28.394 26.6529 29.5098L33.724 36.5809Z"
+                    fill="#297AFF"
+                  ></path>
+                  <path
+                    d="M30 40H19.5098C17.9943 40 16.5408 39.398 15.4692 38.3263L1.67368 24.5308C0.60204 23.4592 0 22.0057 0 20.4902V10L30 40Z"
+                    fill="#34C2FF"
+                  ></path>
+                  <path
+                    d="M10.7143 39.9999H4.28571C1.91878 39.9999 0 38.0812 0 35.7142V29.2856L10.7143 39.9999Z"
+                    fill="#34C2FF"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.343 2.65705L20 0L40 20L20 40L17.3429 37.3429L34.6859 20L17.343 2.65705Z"
+                    fill="#D41C1C"
+                  ></path>
+                  <path
+                    d="M13.8744 6.12564L16.5314 3.46859L33.0628 20L16.5314 36.5314L13.8744 33.8744L27.7487 20L13.8744 6.12564Z"
+                    fill="#D41C1C"
+                  ></path>
+                  <path
+                    d="M0 20L13.0628 6.93718L26.1256 20L13.0628 33.0628L10.4058 30.4058L20.8115 20L13.0628 12.2513L2.65705 22.657L0 20Z"
+                    fill="#D41C1C"
+                  ></path>
+                  <path
+                    d="M13.0628 13.8744L10.4058 16.5314L13.8744 20L6.93718 26.9372L9.59422 29.5942L19.1885 20L13.0628 13.8744Z"
+                    fill="#D41C1C"
+                  ></path>
+                  <path
+                    d="M6.12564 26.1256L3.46859 23.4686L9.56643 17.3708L12.2235 20.0278L6.12564 26.1256Z"
+                    fill="#D41C1C"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="51"
+                  height="40"
+                  viewBox="0 0 51 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.446 0L22.7801 8.82887C23.3936 9.35302 23.7473 10.1222 23.7473 10.9323V17.5862L13.4131 8.75734C12.7996 8.23319 12.446 7.464 12.446 6.65386V0Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M12.446 40L22.7801 31.1711C23.3936 30.647 23.7473 29.8778 23.7473 29.0677V22.4138L13.4131 31.2427C12.7996 31.7668 12.446 32.536 12.446 33.3461V40Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M0.117188 9.31034L10.3108 17.9705C10.805 18.3904 11.4308 18.6207 12.0775 18.6207H20.2982L10.1297 9.96253C9.63514 9.54141 9.00837 9.31034 8.36065 9.31034H0.117188Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M0.117188 30.6897L10.2481 22.0345C10.7432 21.6115 11.3713 21.3793 12.0206 21.3793H20.3227L10.1291 30.0394C9.63487 30.4593 9.00904 30.6897 8.36236 30.6897H0.117188Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M37.7884 0L27.4542 8.82887C26.8407 9.35302 26.4871 10.1222 26.4871 10.9323V17.5862L36.8212 8.75734C37.4347 8.23319 37.7884 7.464 37.7884 6.65386V0Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M37.7884 40L27.4542 31.1711C26.8407 30.647 26.4871 29.8778 26.4871 29.0677V22.4138L36.8212 31.2427C37.4347 31.7668 37.7884 32.536 37.7884 33.3461V40Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M50.1172 9.31034L39.9236 17.9705C39.4294 18.3904 38.8035 18.6207 38.1569 18.6207H29.9361L40.1047 9.96253C40.5992 9.54141 41.226 9.31034 41.8737 9.31034H50.1172Z"
+                    fill="#7B19D8"
+                  ></path>
+                  <path
+                    d="M50.1172 30.6897L39.9863 22.0345C39.4912 21.6115 38.863 21.3793 38.2137 21.3793H29.9117L40.1052 30.0394C40.5995 30.4593 41.2253 30.6897 41.872 30.6897H50.1172Z"
+                    fill="#7B19D8"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+            <li class="advantages-item">
+              <figure class="advantages-item-img">
+                <svg
+                  width="49"
+                  height="40"
+                  viewBox="0 0 49 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.3947 40C43.8275 39.8689 49 34.6073 49 28.1389C49 24.9931 47.7512 21.9762 45.5282 19.7518L25.7895 0V12.2771C25.7895 14.3303 26.6046 16.2995 28.0556 17.7514L32.6795 22.3784L32.6921 22.3907L40.4452 30.149C40.697 30.4009 40.697 30.8094 40.4452 31.0613C40.1935 31.3133 39.7852 31.3133 39.5335 31.0613L36.861 28.3871H12.139L9.46655 31.0613C9.21476 31.3133 8.80654 31.3133 8.55476 31.0613C8.30297 30.8094 8.30297 30.4009 8.55475 30.149L16.3079 22.3907L16.3205 22.3784L20.9444 17.7514C22.3954 16.2995 23.2105 14.3303 23.2105 12.2771V0L3.47175 19.7518C1.24882 21.9762 0 24.9931 0 28.1389C0 34.6073 5.17252 39.8689 11.6053 40H37.3947Z"
+                    fill="#FF0A0A"
+                  ></path>
+                </svg>
+              </figure>
+              <p class="txt">
+                Fast performance<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Advantages -->
+
+      <!--start prices -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">
+            Get awesome features, without extra charges
+          </h2>
+          <p class="title-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet mass.
+          </p>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-price">$0</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
+            <div class="pricing-card pricing-card-featured">
+              <div class="pricing-price">$40</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+                <li>Feature four</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-price">$99</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+                <li>Feature four</li>
+                <li>Feature five</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h2 class="section-title">Your product</h2>
+        <ul class="links">
+          <li class="links-item">
+            <a class="links-item-link" href="#">Home</a>
+          </li>
+          <li class="links-item">
+            <a class="links-item-link" href="#">Features</a>
+          </li>
+          <li class="links-item">
+            <a class="links-item-link" href="#">Prices</a>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="#" class="socials-item-link">
+            <img
+              class="socials-item-img"
+              width="48"
+              height="48"
+              src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000"
+              alt="instagram"
+            />
+          </a>
+          <a href="#" class="socials-item-link">
+            <img
+              class="socials-item-img"
+              width="48"
+              height="48"
+              src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
+              alt="facebook"
+            />
+          </a>
+          <a href="#" class="socials-item-link">
+            <img
+              class="socials-item-img"
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+  </body>
+</html>
