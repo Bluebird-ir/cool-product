@@ -33,7 +33,7 @@
           <nav class="nav">
             <a href="#home" class="btn nav-link">Home</a>
             <a href="#features" class="btn nav-link">Features</a>
-            <a href="#prices" class="btn nav-link">Prices</a>
+            <a href="#pricing" class="btn nav-link">Prices</a>
             <a href="#" class="btn btn-secondary">Try for free</a>
           </nav>
         </div>
@@ -42,7 +42,7 @@
     <!-- end Header -->
     <main>
       <!-- start Home -->
-      <section class="home">
+      <section class="home" id="home">
         <div class="container">
           <div class="card-wrapper">
             <div class="home-left-card">
@@ -69,7 +69,7 @@
       <!-- Trusted by -->
       <section class="trusted">
         <div class="container">
-          <p class="txt">Trusted by companies like</p>
+          <h2 class="section-title">Trusted by companies like</h2>
 
           <div class="trusted-logos">
             <!-- Заменить на реальные <img> с логотипами -->
@@ -157,7 +157,7 @@
       <!--  start Video-section -->
       <section class="video-section">
         <div class="container">
-          <h2 class="video-title">Check out our video:</h2>
+          <h2 class="section-title">Check out our video:</h2>
           <div class="video-embed" aria-label="Product video">
             <iframe
               src="https://www.youtube-nocookie.com/embed/h359LRmMZMU"
@@ -169,7 +169,7 @@
       <!-- end Video-section -->
 
       <!-- Features -->
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <h2 class="section-title">Awesome apps features</h2>
           <p class="title-description">
@@ -452,34 +452,49 @@
       <!-- end Advantages -->
 
       <!--start prices -->
-      <section class="prices-section">
+      <section class="pricing" id="pricing">
         <div class="container">
-          <div class="prices-heading">
-            <h2 class="prices-title">
-              Get awsome features, without extra charges
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-              amet mass.
-            </p>
-          </div>
-          <div class="price-package">
-            <p>$0</p>
-            <button>Bronze Membership</button>
-          </div>
-
-          <div class="price-package">
-            <p>$40</p>
-            <button>Silver Membership</button>
-          </div>
-
-          <div class="price-package">
-            <p>$99</p>
-            <button>Golden Membership</button>
+          <h2 class="section-title">
+            Get awesome features, without extra charges
+          </h2>
+          <p class="title-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet mass.
+          </p>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-price">$0</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
+            <div class="pricing-card pricing-card-featured">
+              <div class="pricing-price">$40</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+                <li>Feature four</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-price">$99</div>
+              <ul class="pricing-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+                <li>Feature four</li>
+                <li>Feature five</li>
+              </ul>
+              <button class="btn">Get started</button>
+            </div>
           </div>
         </div>
       </section>
-      <!--end prices -->
     </main>
 
     <!-- Footer -->
