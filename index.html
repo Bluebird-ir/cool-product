@@ -119,7 +119,9 @@
             <div class="container">
                 <h2 class="video-title">Check out our video:</h2>
                 <div class="video-embed" aria-label="Product video">
-                    <iframe src="https://www.youtube-nocookie.com/embed/h359LRmMZMU" title="Product video" </iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/h359LRmMZMU" title="Product video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -182,25 +184,40 @@
         <!-- end Features -->
 
         <!--start prices -->
-        <section class="prices-section">
+        <section class="prices-section" id="prices">
             <div class="container">
-                <div class="prices-heading">
-                    <h2 class="prices-title">Get awsome features, without extra charges</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet mass.</p>
-                </div>
-                <div class="price-package">
-                    <p>$0</p>
-                    <button>Bronze Membership</button>
-                </div>
 
-                <div class="price-package">
-                    <p>$40</p>
-                    <button>Silver Membership</button>
-                </div>
+                <h2 class="prices-title">Get awsome features, without extra charges</h2>
+                <p class="prices-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+                    mass.</p>
 
-                <div class="price-package">
-                    <p>$99</p>
-                    <button>Golden Membership</button>
+                <div class="price-packages-containers">
+                    <div class="price-package">
+                        <img class="price-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/22/Ski_Bronze_Medal.png"
+                            alt="Bronze membership package" />
+                        <h3 class="price-name">Bronze</h3>
+                        <p class="price-value">$0</p>
+                        <button class="btn">Bronze Membership</button>
+                    </div>
+
+                    <div class="price-package">
+                        <img class="price-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Ski_Silver_Medal.png"
+                            alt="Silver membership package" />
+                        <h3 class="price-name">Silver</h3>
+                        <p class="price-value">$40</p>
+                        <button class="btn">Silver Membership</button>
+                    </div>
+
+                    <div class="price-package">
+                        <img class="price-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/0/03/Ski_Gold_Medal.png"
+                            alt="Gold membership package" />
+                        <h3 class="price-name">Gold</h3>
+                        <p class="price-value">$99</p>
+                        <button class="btn">Golden Membership</button>
+                    </div>
                 </div>
             </div>
         </section>
